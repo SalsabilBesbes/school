@@ -14,10 +14,10 @@ services:
       - db:/var/lib/mysql
 
 
-  app-timesheet:
+  app-school:
     depends_on:
       - mysqldb
-    image: salsabil2024/school-image:1.0.0
+    image: mouradhassini/school-image:1.0.0
     #build : ./
     restart: on-failure
     ports:
